@@ -1,101 +1,204 @@
 <!DOCTYPE html>
-<html>	
-  <head>
-    <title>Using the Bootstrap Grid classes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-    <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Data Pitch</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Data Pitch">
+		<meta name="author" content="geedmo">
+		<!-- Le styles -->
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+        <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+        
+        <link href="css/columns.css" rel="stylesheet" type="text/css" media="all" />
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-  </head>
-  <body>
-<div id="header">
-    <div id="menu" class="container">
-        <ul>
-          <li><a href="http://alanponce.me/datapitch/aboutus.html" accesskey="2" title="">About Us</a></li>
-          <li class="current_page_item"><a href="http://alanponce.me/datapitch/index.html" accesskey="1" title="">Home</a></li>      
-          <li><a href="http://alanponce.me/datapitch/ourpartners.html" accesskey="1" title="">Our Partners</a></li>
-          <li><a href="http://alanponce.me/datapitch/dataproviders.html" accesskey="2" title="">Data Owners</a></li>
-          <li><a href="http://alanponce.me/datapitch/join.html" accesskey="2" title="">Join the bid</a></li>      
+		<style>
+			html, body {
+				height: 100%;
+			}
+			.wrapper {
+				min-height: 100%;
+				height: auto !important;
+				height: 100%;
+				margin: 0 auto -120px;
+			}
+			.footer, .push {
+				height: 120px;
+			}
+		</style>
+	</head>
+
+	<body>
+        
+        <div id="header">
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="http://alanponce.me/datapitch/aboutus.html" accesskey="2" title="">About Us</a></li>
+          <li class="current_page_item"><a href="http://alanponce.me/datapitch/index.html" accesskey="1" title="">Home</a></li>
+          <li><a href="http://alanponce.me/datapitch/dataowners.html" accesskey="2" title="">Data Owners</a></li>
+          <li><a href="http://alanponce.me/datapitch/join.html" accesskey="2" title="">Join the bid</a></li> 
           <li><a href="#" accesskey="4" title="">Contact Us</a></li>
-        </ul>
-    </div>
+		</ul>
+	</div>
+</div>
+<div id="logo" class="container">
+	<h1><a class="icon icon-tasks"><span>Data Pitch</span></a></h1>
 </div>
 
-    <div class="container">
-      <h1 style="color:blue;"> Core Partners </h1>
-      <br></br>
+		<div class="container wrapper">
 
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/UoS.jpg" alt="UoS-logo" height="110" width="230" /> 
-            <br></br>
+			<br />
+			<h2 style="color:blue;">Partners</h2>
+			<hr>
+			<div class="pull-right">
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="all">
+					All
+				</button>
+                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="core">
+					Core
+				</button>
+                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="thirdparty">
+					Third Party
+				</button>
+			</div>
+			<div class="clearfix"></div>
 
-            The <a href=http://www.southampton.ac.uk//> University of Southampton </a> <span class="byline"> is ranked in the top ten research-led universities in the UK. It participates in a number of collaborative research projects and its Electronics and Computer Science (ECS) school plays a leading role in development of Web Science and linked and open data.</span>
+			<br />
+            
+       <!-- <div class="row row-eq-height">   --> 
+             
+			<ul class="thumbnails gallery">
+           <!-- <div class="col-md-3 col-sm-6 col-xs-12" style="background-color:#F89406;">-->
+				<li class="span3 clearfix" data-tag='core'>
+					<div style="height:410px;" class="thumbnail">
+						<img class="displayed" src="images/partners/UoS.jpg" alt="UoS-logo" height="190" width="395" />
+						<div class="caption">
+							<!--<h4>Airport infrastructure data</h4>-->
+                            <h4>Core</h4>
+                           <br></br>
 
+                            The <a href=http://www.southampton.ac.uk//> University of Southampton </a> <span class="byline"> is ranked in the top ten research-led universities in the UK. It participates in a number of collaborative research projects and its Electronics and Computer Science (ECS) school plays a leading role in development of Web Science and linked and open data.</span>
+                            
+						</div>
+					</div>
+				</li>
+                <li class="span3 clearfix" data-tag='core'>
+					<div style="height:410px;" class="thumbnail">
+						<img class="displayed" src="images/partners/ODI.jpg" alt="ODI-logo" height="110" width="155" />
+						<div class="caption">
+							<!--<h4>Airport infrastructure data</h4>-->
+                            <h4>Core</h4>
+                            <br></br>
+
+                            The <a href=http://theodi.org/> Open Data Institute </a> <span class="byline"> connects, equips and inspires people around the world to innovate with data. It is independent, nonprofit and nonpartisan, and was founded in 2012 by Sir Tim Berners-Lee and Sir Nigel Shadbolt.</span>
+						</div>
+					</div>
+				</li>
+                <li class="span3 clearfix" data-tag='core'>
+					<div style="height:410px;" class="thumbnail">
+						<img class="displayed" src="images/partners/TIM.jpg" alt="TIM-logo" height="190" width="130" />
+						<div class="caption">
+                            <h4>Core</h4>
+                         <a href=http://www.telecomitalia.com/tit/en.html> Telecom Italia </a> <span class="byline"> is a major Italian enterprise and a key European strategic ICT player. Driven by technological innovation and a commitment to service excellence, Group companies operate in fixed-line and mobile telecommunications, Internet and Media, Information Technologies.</span>
+						</div>
+					</div>
+				</li>
+                <li class="span3 clearfix" data-tag='core'>
+					<div style="height:410px;" class="thumbnail">
+						<img class="displayed" src="images/partners/Beta-i_2.jpg" alt="TIM-logo" height="190" width="145" />
+						<div class="caption">
+                            <h4>Core</h4>
+                         <a href=http://beta-i.pt/> Beta-i  </a> <span class="byline"> is a non-profit association created in 2010, with the mission to improve entrepreneurship through 3 main acting principles: create and boost a  network of entrepreneurship, accelerate startups with global ambition and facilitate their access to investment, create space, services and products focused on startups.</span>
+						</div>
+					</div>
+				</li>
+                
+                <!-- Third party
+		           ================================================== -->
+                
+				<li class="span3 clearfix" data-tag='thirdparty'>
+					<div style="height:240px;" class="thumbnail">
+                        <img class="displayed" src="images/thirdparties/TheGuardian.jpg" alt="turismoLisboa-logo" height="90" width="225" />
+						<!--<img alt="1970x170" src="images/dataowners/turismoLisboa.png" height="1970" width="170" />-->
+						<div class="caption">
+							<!--<h4>Tourism data</h4>-->
+                            <h4>Third Party</h4>
+						</div>
+					</div>
+				</li>
+                <li class="span3 clearfix" data-tag='thirdparty'>
+					<div style="height:240px;" class="thumbnail">
+                        <img class="displayed" src="images/thirdparties/waag-logo2.jpg" alt="turismoLisboa-logo" height="280" width="270" />
+						<div class="caption">
+                            <h4>Third Party</h4>
+							<!--<a href=http://waag.org/en/> Waag Society—institute for art, science and technology— </a> <span class="byline"> is a pioneer in the field of digital media. Over the past 20 years, the foundation has developed into an institution of international stature, a platform for artistic research and experimentation, and has become both a catalyst for events and a breeding ground for cultural and social innovation.  </span>-->
+						</div>
+					</div>
+				</li>
+				<li class="span3 clearfix" data-tag='thirdparty'>
+					<div style="height:240px;" class="thumbnail">
+                        <img class="displayed" src="images/thirdparties/FiveByFive.png" alt="FiveByFive-logo" height="290" width="110" />
+						<div class="caption">
+                            <h4>Third Party</h4>
+						</div>
+					</div>
+				</li>
+                <li class="span3 clearfix" data-tag='thirdparty'>
+					<div style="height:240px;" class="thumbnail">
+                        <img class="displayed" src="images/thirdparties/bpe.png" alt="bpe-logo" height="290" width="150" />
+						<!--<img alt="1970x170" src="images/dataowners/turismoLisboa.png" height="1970" width="170" />-->
+						<div class="caption">
+                            <h4>Third Party</h4>
+                             <!--<a href=http://www.bpe.co.uk/> BPE </a> <span class="byline"> is a  law firm based on London that works with business, researchers and funders to deliver advice that will help to maintain UK STEM’s world leading reputation. They have specialist sector expertise borne out of this experience, in particular, in regenerative medicine, high value manufacturing, transport, advanced materials, space and satellite applications and the digital economy.   </span>-->
+						</div>
+					</div>
+				</li>
+
+                 
+                                
+				<!--<li class="span3" data-tag='brand'>
+					<div class="thumbnail" >
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Brand Project</h4>
+						</div>
+					</div>
+				</li>-->
+			</ul>
+       <!-- </div>-->
+			<div class="push"></div>
+		</div>
+
+		<!-- /container -->
+
+		<!-- Footer
+		================================================== -->
+		<div id="contact" class="container">
+            <div class="major">
+                <h2>Get in touch</h2>
+                <span class="byline">Phasellus nec erat sit amet nibh pellentesque congue</span>
+            </div>
+            <ul class="contact">
+                <li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+                <li><a href="#" class="icon icon-facebook"><span></span></a></li>
+                <li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+                <li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+                <li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+            </ul>
         </div>
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="bootstrap/bootstrap-portfilter.min.js"></script>
 
-        <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/ODI.jpg" alt="ODI-logo" height="110" width="230" />
-            <br></br>
-
-             The <a href=http://theodi.org/> Open Data Institute </a> <span class="byline"> connects, equips and inspires people around the world to innovate with data. It is independent, nonprofit and nonpartisan, and was founded in 2012 by Sir Tim Berners-Lee and Sir Nigel Shadbolt.</span>
-
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/TIM.jpg" alt="TIM-logo" height="110" width="230" />
-            <br></br>
-
-            <a href=http://www.telecomitalia.com/tit/en.html> Telecom Italia </a> <span class="byline"> is Italy’s leading telecommunications and IT group. It has a history of focusing on innovation and over the next three years the group will be investing €3.4bn on the development of new generation technologies.</span>
-
-        </div>
-
-                                              <div class="clearfix"></div>
-                          <!-- This class fix the problem of selection is the upper section -->
-
-         <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/Beta-i_2.jpg" alt="Beta-i-logo" height="110" width="230" /> 
-            <br></br>
-
-            <a href=http://beta-i.pt/> Beta-i  </a> <span class="byline"> is a non-profit association created in 2010, with the mission to improve entrepreneurship through 3 main acting principles: create and boost a  network of entrepreneurship, accelerate startups with global ambition and facilitate their access to investment, create space, services and products focused on startups.</span>
-
-        </div>
-
-
-                                                    <div class="clearfix"></div>
-                          <!-- This class fix the problem of selection is the upper section -->
-
-        <h1 style="color:blue;"> Thirs parties </h1>
-        <br></br>
-
-        <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/waag-logo2.jpg" alt="WaaG-logo" height="110" width="310" />
-            <br></br>
-
-             <a href=http://waag.org/en/> Waag Society  </a> <span class="byline"> is a pioneer in the field of digital media. Over the past 20 years, the foundation has developed into an institution of international stature, a platform for artistic research and experimentation, and has become both a catalyst for events and a breeding ground for cultural and social innovation.</span>
-
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-            <img class="displayed" src="images/FiveByFive.png" alt="FiveByFive-logo" height="110" width="230" />
-            <br></br>
-
-            <a href=https://fivebyfiveglobal.com/#!/> Five by Five  </a> <span class="byline"> is an innovation consultancy based in Paris. It helps established organizations find value in opening their data, develop new business models and use the startup ecosystem to drive open innovation.</span>
-
-        </div>
-
-        
-
-
-
-      </div>
-    </div>
-  </body>
-</html> 
+	</body>
+</html>
